@@ -1,0 +1,12 @@
+{
+  "sepolia": {
+    "EventOrganizerService": {
+      "address": "0x07591Dec37a5E1299fBC302B285712aA550b0Dd4",
+      "startBlock": 12603356
+    },
+    "Museum": {
+      "address": "0x47CA7e46cEDCD8cB2ddAd9646c4F7954e9bE49D1",
+      "startBlock": 12603353
+    }
+  }
+}

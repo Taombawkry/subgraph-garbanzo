@@ -1,27 +1,28 @@
-{
-    "env": {
-      "browser": true,
-      "es2021": true
-    },
-    "extends": [
-      "eslint:recommended",
-      "plugin:@typescript-eslint/recommended"
-    ],
-    "parser": "@typescript-eslint/parser",
-    "parserOptions": {
-      "ecmaVersion": 12,
-      "sourceType": "module"
-    },
-    "plugins": [
-      "@typescript-eslint"
-    ],
-    "rules": {
-      // Your custom rules go here 
-      "@typescript-eslint/no-inferrable-types": "off",
-      "@typescript-eslint/no-explicit-any": "warn",
-      "@typescript-eslint/no-unused-vars": "warn",
-      "@typescript-eslint/no-extra-semi": "warn"
-      // The above turn off warnings for the default values within the repo
-    }
-  }
-  
+// {
+//   "env": {
+//     "browser": true,
+//     "es2021": true
+//   },
+//   "extends": [
+//     "eslint:recommended",
+//     "plugin:@typescript-eslint/recommended"
+//   ],
+//   "parser": "@typescript-eslint/parser",
+//   "parserOptions": {
+//     "ecmaVersion": 12,
+//     "sourceType": "module"
+//   },
+//   "plugins": [
+//     "@typescript-eslint"
+//   ],
+//   "rules": {
+//     "@typescript-eslint/no-inferrable-types": "off",
+//     "@typescript-eslint/no-explicit-any": "warn",
+//     "@typescript-eslint/no-unused-vars": "warn",
+//     "@typescript-eslint/no-extra-semi": "warn",
+//     "@typescript-eslint/ban-types": "off",
+//     "prefer-const": "off",
+//     "@typescript-eslint/no-non-null-assertion": "off",
+//     "@typescript-eslint/no-array-constructor": "off"
+//   }
+// }

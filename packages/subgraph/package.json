@@ -1,14 +1,14 @@
 {
-  "name": "template-subgraph",
+  "name": "subgraph-garbanzo",
   "license": "UNLICENSED",
   "version": "0.0.1",
   "scripts": {
     "codegen": "graph codegen",
     "build": "graph build",
-    "deploy:dev": "graph deploy --product hosted-service --network <network>",
-    "create-local": "graph create --node <graph-node-url> <subgraph-name>",
-    "remove-local": "graph remove --node <graph-node-url> <subgraph-name>",
-    "deploy-local": "graph deploy --node <graph-node-url> --ipfs <ipfs-url> <subgraph-name>",
+    "deploy:dev": "graph deploy --product hosted-service --node https://api.studio.thegraph.com/deploy/ Taombawkry/subgraph-garbanzo --ipfs https://api.thegraph.com/ipfs/",
+    "create-local": "graph create --node http://localhost:8020/ Taombawkry/subgraph-garbanzo",
+    "remove-local": "graph remove --node http://localhost:8020/ Taombawkry/subgraph-garbanzo",
+    "deploy-local": "graph deploy --node http://localhost:8020/ --ipfs http://localhost:5001 Taombawkry/subgraph-garbanzo",
     "test": "graph test"
   },
   "dependencies": {

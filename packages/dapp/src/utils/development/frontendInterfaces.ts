@@ -11,10 +11,10 @@ export interface authUserProps {
     email: string;
     walletAddress: string;
     password: string;
-};
+}
 
 // auth-sign-in/page.tsx
 export interface authUserSignIn {
     email: string;
     password: string;
-};
+}

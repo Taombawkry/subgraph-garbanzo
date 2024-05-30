@@ -12,7 +12,7 @@ export interface SmartContract1Deployment {
     symbol : string;
     owner : string;
     baseURIParam : string;
-};
+}
 
 
 // <----- Utilities ------>
@@ -22,4 +22,4 @@ export interface SmartContract1Deployment {
 export interface BigNumber {
     _hex: string;
     _isBigNumber: boolean;
-  };
+  }

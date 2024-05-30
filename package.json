@@ -10,8 +10,7 @@
   "scripts": {
     "prepublish": "pnpm build",
     "verify": "",
-    "postinstall": "husky install",
-    "lint": "eslint 'packages/**/*.{ts,tsx,js,jsx}'"
+    "postinstall": "husky install"
   },
   "keywords": ["template", "dapp"],
   "author": "SummitShare",

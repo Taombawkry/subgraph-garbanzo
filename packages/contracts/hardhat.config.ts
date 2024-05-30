@@ -8,6 +8,7 @@ const chainID = [11155420, 11155111]
 
 // RPC URL STORED in .env - Replace with your own values
 const SEPOLIA_RPC_URL = process.env.RPC_URL;
+const accounts = process.env.PRIVATE_KEYS?.split(',');
 
 const config: HardhatUserConfig = {
   solidity: {
@@ -22,6 +23,7 @@ const config: HardhatUserConfig = {
   networks: {
     sepolia: {
       url: SEPOLIA_RPC_URL,
+      accounts,
       chainId: chainID[0], 
       gasPrice: 'auto'
     }
