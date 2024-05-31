@@ -5,36 +5,36 @@ async function main() {
     // Get the signers
     const [controller, owner, beneficiary1, beneficiary2, funder] = await ethers.getSigners();
     // Hardcoded addresses
-    const usdcTokenAddress = "0x9C337031e628cE48f24113db2b3437b83fB668a5";
-    const museumAddress = "0x47CA7e46cEDCD8cB2ddAd9646c4F7954e9bE49D1";
-    const organizerServiceAddress = "0x07591Dec37a5E1299fBC302B285712aA550b0Dd4";
-    const artifactNFT1 = "0xD8b5a20Bf39fcDFF63C0850e5CfEdA0058780fFC";
-    const artifactNFT2 = "0xF91634898bfcFC1C7Ac654C176d0604aC4ab3B4A";
+    const usdcTokenAddress = "0xF1Db912Df4e70736569c86cf8664Bec70820Bff4";
+    const museumAddress = "0x1C39A3e2aD8c9CdFdc3d1EB7b29Dbeb215071324";
+    const organizerServiceAddress = "0xc0E381221F83a3e5C73b696Fd2fDCbc086d3A2E5";
+    const artifactNFT1 = "0x87FedE8360e3e109E555F4441e8c3F5F6b750EC6";
+    const artifactNFT2 = "0x661f20F33A0E2B9bd65fA00AC31FeA842342FBf1";
 
   
     const exhibit1 ={
-        name: "Tekketsu",
-        symbol: "KIZU",
-        ticketPrice: ethers.parseUnits("10", 18),
+        name: "Kizu: Nekketsu",
+        symbol: "NEKK",
+        ticketPrice: ethers.parseUnits("5", 18),
         beneficiaries: [beneficiary1.address, beneficiary2.address],
         shares: [50, 50],
         baseURI: "https://s3.tebi.io/summitsharemetadata/leadingLadies",
         location: "Vitalik's Master Node",
         artifactNFT: artifactNFT1,
-        details: "Part One",
-        id: "KIZU"
+        details: "Test Two",
+        id: "NEKKII"
     } 
     const exhibit2 ={
-        name: "Reiketsu",
-        symbol: "REIK",
+        name: "Bake: Bakemonogatari",
+        symbol: "BMG",
         ticketPrice: ethers.parseUnits("10", 18),
         beneficiaries: [beneficiary1.address, beneficiary2.address],
         shares: [50, 50],
         baseURI: "https://s3.tebi.io/summitsharemetadata/leadingLadies",
         location: "New York,USA",
         artifactNFT: artifactNFT2,
-        details: "Part Two",
-        id: "REIK"
+        details: "Test Two",
+        id: "BMGII"
     }
 
     // Connect to the contracts

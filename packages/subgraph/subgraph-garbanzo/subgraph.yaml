@@ -9,8 +9,8 @@ dataSources:
     network: optimism-sepolia
     source:
       abi: EventOrganizerService
-      address: "0x07591Dec37a5E1299fBC302B285712aA550b0Dd4"
-      startBlock: 4751265
+      address: "0xc0E381221F83a3e5C73b696Fd2fDCbc086d3A2E5"
+      startBlock: 12683223
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.7
@@ -41,8 +41,8 @@ dataSources:
     network: optimism-sepolia
     source:
       abi: Museum
-      address: "0x47CA7e46cEDCD8cB2ddAd9646c4F7954e9bE49D1"
-      startBlock: 12603353
+      address: "0x1C39A3e2aD8c9CdFdc3d1EB7b29Dbeb215071324"
+      startBlock: 12683220
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.7

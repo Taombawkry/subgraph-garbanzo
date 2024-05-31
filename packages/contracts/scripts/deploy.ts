@@ -6,11 +6,11 @@ async function main() {
   const [controller, owner, beneficiary1, beneficiary2, funder] = await ethers.getSigners();
 
   const MockUSDC = await ethers.getContractFactory("MUSDC");
-  const usdcToken = await MockUSDC.connect(owner).deploy(ethers.parseUnits("20000000", 18));
+  const usdcToken = await MockUSDC.connect(owner).deploy(ethers.parseUnits("2000000000", 18));
   await usdcToken.deploymentTransaction().wait(1);
 
   //distribute some USDC to the funders
-  const tx1 = await usdcToken.connect(owner).transfer(funder.address, ethers.parseUnits("2000000", 18));
+  const tx1 = await usdcToken.connect(owner).transfer(funder.address, ethers.parseUnits("2000000000", 18));
   await tx1.wait();
 
   // Deploying Museum contract
@@ -29,13 +29,13 @@ async function main() {
     name: "Kizumonogatari",
     symbol: "KMG",
     owner: owner.address,
-    baseURI: "http://localhost:3000/api/nft/",
+    baseURI: "https://s3.tebi.io/summitsharemetadata/leadingLadies",
   }
   const artifact2 = {
     name: "Nekomonogatari",
     symbol: "NMG",
     owner: owner.address,
-    baseURI: "http://localhost:3000/api/nft/",
+    baseURI: "https://s3.tebi.io/summitsharemetadata/leadingLadies",
   }
 
 
